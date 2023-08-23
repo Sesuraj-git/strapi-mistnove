@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "Employee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "employee"
+    },
+    "is_restaurant": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_hotel": {
+      "type": "boolean",
+      "default": false
+    },
+    "institute": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::institute.institute"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_order_trackers",
+  "info": {
+    "singularName": "food-order-tracker",
+    "pluralName": "food-order-trackers",
+    "displayName": "Food Order Tracker"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "food_order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-order.food-order"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "food_order_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-order-status.food-order-status"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}

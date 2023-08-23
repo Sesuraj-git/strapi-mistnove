@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_orders",
+  "info": {
+    "singularName": "food-order",
+    "pluralName": "food-orders",
+    "displayName": "Food Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_code": {
+      "type": "string",
+      "unique": true
+    },
+    "restaurant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::restaurant.restaurant"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "ordered_by": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "accepted_by": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "cgst": {
+      "type": "decimal"
+    },
+    "sgst": {
+      "type": "decimal"
+    },
+    "discount_amount": {
+      "type": "decimal"
+    },
+    "current_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-order-status.food-order-status"
+    },
+    "is_pos_order": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

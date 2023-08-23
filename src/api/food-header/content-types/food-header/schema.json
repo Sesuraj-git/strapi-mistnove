@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_headers",
+  "info": {
+    "singularName": "food-header",
+    "pluralName": "food-headers",
+    "displayName": "food_header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "diet_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::diet-type.diet-type"
+    }
+  }
+}

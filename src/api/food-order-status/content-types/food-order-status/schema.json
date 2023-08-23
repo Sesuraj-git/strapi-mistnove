@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_order_statuses",
+  "info": {
+    "singularName": "food-order-status",
+    "pluralName": "food-order-statuses",
+    "displayName": "Food Order Status",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "display_name": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "back_color": {
+      "type": "string"
+    },
+    "text_color": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

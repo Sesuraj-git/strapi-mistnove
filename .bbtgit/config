@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://x-token-auth:ATCTT3xFfGN0mOdFVg6YTDrRM8RPgye4n8HjpjhTOS3BEyWjq_7TjczlUXOCCq5FLTr_FD5fe3--quc7oW2smYjSXzBqtTf0DKepG2BRffggIzN8H1RKCRy5YhsaulbeimtymY7X0tunXvlJJRnyritfySemEkKde4quYtJLtCgIaFTTo25mi5Y=AD4E806B@bitbucket.org/sesuraj1/strapi-mistnove.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main

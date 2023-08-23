@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_order_items",
+  "info": {
+    "singularName": "food-order-item",
+    "pluralName": "food-order-items",
+    "displayName": "Food Order Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "food_order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-order.food-order"
+    },
+    "food_menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-menu.food-menu"
+    },
+    "food_header": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-header.food-header"
+    },
+    "qty": {
+      "type": "integer"
+    }
+  }
+}
